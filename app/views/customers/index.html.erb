@@ -1,10 +1,12 @@
 <h1>Our Customers</h1>
 
+<!--The below lines are added:-->
 <h1>Our Customers</h1>
 <%= form_tag customers_upload_path, multipart: true do %>
 <%= file_field_tag :leads %>
 <%= submit_tag "Import Leads" %>
 <% end %>
+<!--The above lines are added.-->
 
 <ul>
 <% @customers.each do |customer| %>
